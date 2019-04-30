@@ -7,22 +7,20 @@ Technology specific interface definition for a TDM Container
 
 ### UML
 - Thorsten Heinze (Thorsten.Heinze@openBackhaul.com)
-- 2.0.0-tsp.190205.1530 : [190205 TdmContainerPac.zip](./190205%20TdmContainerPac.zip)
+- [TdmContainer_2.0.0-tsp.190430.2000](./TdmContainer_2.0.0-tsp.190430.2000.zip)
 
 ### Overview 
 - Thorsten Heinze (Thorsten.Heinze@openBackhaul.com)
-- 2.0.0-tsp.190205.1530+overview.1 : [](./)
+- [TdmContainer_2.0.0-tsp.190430.2000+overview.1](./TdmContainer_2.0.0-tsp.190430.2000+overview.1.png)
 
 ### List of Classes
-- Thorsten Heinze (Thorsten.Heinze@openBackhaul.com)
-- 2.0.0-tsp.190205.1530+list.1 : [](./)
+- to be provided
 
 ### GenDoc Export
 - Thorsten Heinze (Thorsten.Heinze@openBackhaul.com)
-- 2.0.0-tsp.190205.1530+gendoc.1 : [](./)
+- [TdmContainer_2.0.0-tsp.190430.2000+gendoc.1](./TdmContainer_2.0.0-tsp.190430.2000+gendoc.1.docx)
 
 ### YANG File
-- Thorsten Heinze (Thorsten.Heinze@openBackhaul.com)
 - to be provided
 
 ### Interface Simulator
@@ -39,6 +37,6 @@ Technology specific interface definition for a TDM Container
 
 ### Open Issue List
 - Thorsten Heinze (Thorsten.Heinze@openBackhaul.com)
-- [bugtracker.openBackhaul.com](https://bugtracker.openBackhaul.com)
+- [tdmContainer/issues](../../issues)
 
 ### Comments
