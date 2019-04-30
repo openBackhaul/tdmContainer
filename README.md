@@ -13,8 +13,5 @@ Technology specific amendment to the LayerProtocol class for a transport resourc
 - Disaggregated component of TR-532
 - under definition
 
-### Open Issue List
-- [bugtracker.openBackhaul.com](https://bugtracker.openBackhaul.com)
-
 ### Comments
 ./.
