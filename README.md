@@ -9,7 +9,7 @@ Technology specific amendment to the LayerProtocol class for a transport resourc
 - TR-532 v1.1 officially published by ONF in April 2019
 - published
 
-### [2.0.0](../../tree/tsp)
+### [2.0.0-tsp.d.t](../../tree/tsp)
 - Disaggregated component of TR-532
 - under definition
 
