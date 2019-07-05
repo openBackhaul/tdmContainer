@@ -7,19 +7,19 @@ This model is a technology specific amendment to the LayerProtocol class of the 
 
 ### UML
 - Thorsten Heinze (Thorsten.Heinze@openBackhaul.com)
-- [TdmContainer_2.0.0-tsp.190430.2000](./TdmContainer_2.0.0-tsp.190430.2000.zip)
+- [TdmContainer_2.0.0-tsp.190705.1620](./TdmContainer_2.0.0-tsp.190705.1620.zip)
 
 ### Overview 
 - Thorsten Heinze (Thorsten.Heinze@openBackhaul.com)
-- [TdmContainer_2.0.0-tsp.190430.2000+overview.1](./TdmContainer_2.0.0-tsp.190430.2000+overview.1.png)
+- [TdmContainer_2.0.0-tsp.190705.1620+overview.1](./TdmContainer_2.0.0-tsp.190705.1620+overview.1.png)
 
 ### List of Classes
 - Waseem Sattar (Waseem.Sattar@openBackhaul.com)
-- [TdmContainer_2.0.0-tsp.190430.2000+classlist.1](./TdmContainer_2.0.0-tsp.190430.2000+classlist.1.txt)
+- to be provided
 
 ### GenDoc Export
 - Thorsten Heinze (Thorsten.Heinze@openBackhaul.com)
-- [TdmContainer_2.0.0-tsp.190430.2000+gendoc.1](./TdmContainer_2.0.0-tsp.190430.2000+gendoc.1.docx)
+- [TdmContainer_2.0.0-tsp.190705.1620+gendoc.1](./TdmContainer_2.0.0-tsp.190705.1620+gendoc.1.docx)
 
 ### Augmentation Condition
 - When statement in Augmentation statement demands for LayerProtocol::layerProtocolName==LAYER_PROTOCOL_NAME_TDM_CONTAINER_LAYER
