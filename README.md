@@ -1,5 +1,5 @@
 # tdmContainer
-Technology specific interface definition for a TDM Container
+This model is a technology specific amendment to the LayerProtocol class of the ONF Core IM for managing TDM interfaces (e.g. E1, STM-1).
 
 ### Branch
 - Thorsten Heinze (Thorsten.Heinze@openBackhaul.com)
