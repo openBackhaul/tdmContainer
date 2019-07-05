@@ -21,6 +21,9 @@ This model is a technology specific amendment to the LayerProtocol class of the 
 - Thorsten Heinze (Thorsten.Heinze@openBackhaul.com)
 - [TdmContainer_2.0.0-tsp.190430.2000+gendoc.1](./TdmContainer_2.0.0-tsp.190430.2000+gendoc.1.docx)
 
+### Augmentation Condition
+- When statement in Augmentation statement demands for LayerProtocol::layerProtocolName==LAYER_PROTOCOL_NAME_TDM_CONTAINER_LAYER
+
 ### YANG File
 - to be provided
 
