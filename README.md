@@ -22,7 +22,7 @@ This model is a technology specific amendment to the LayerProtocol class of the 
 - [TdmContainer_2.0.0-tsp.190705.1620+gendoc.1](./TdmContainer_2.0.0-tsp.190705.1620+gendoc.1.docx)
 
 ### Augmentation Condition
-- When statement in Augmentation statement demands for LayerProtocol::layerProtocolName==LAYER_PROTOCOL_NAME_TDM_CONTAINER_LAYER
+- When statement in Augmentation statement demands for LayerProtocol::layerProtocolName==LAYER_PROTOCOL_NAME_TYPE_TDM_CONTAINER_LAYER
 
 ### YANG File
 - Martin Skorupski (Martin.Skorupski@openBackhaul.com)
