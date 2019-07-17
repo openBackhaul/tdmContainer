@@ -26,8 +26,8 @@ This model is a technology specific amendment to the LayerProtocol class of the 
 
 ### YANG File
 - Martin Skorupski (Martin.Skorupski@openBackhaul.com)
-- [TdmContainer_2.0.0-tsp.190705.1620+yang.4](./TdmContainer_2.0.0-tsp.190705.1620+yang.4.zip)
-- Please, see [issue#2](../../issues/2) and [issue#3](../../issues/3) for information on the latest change
+- [TdmContainer_2.0.0-tsp.190705.1620+yang.5](./TdmContainer_2.0.0-tsp.190705.1620+yang.5.zip)
+- Please, see [issue#2](../../issues/2), [issue#3](../../issues/3) and [issue#4](../../issues/4) for information on the latest changes
 
 ### Interface Simulator
 - to be provided
