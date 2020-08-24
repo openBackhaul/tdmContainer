@@ -1,32 +1,27 @@
 # tdmContainer
-This model is a technology specific amendment to the LayerProtocol class of the ONF Core IM for managing TDM interfaces (e.g. E1, STM-1).
+- This model is a technology specific amendment to the LayerProtocol class of the ONF Core IM for managing TDM interfaces (e.g. E1, STM-1).
+- Thorsten Heinze (Thorsten.Heinze@openBackhaul.com)
 
 ### Branch
-- Thorsten Heinze (Thorsten.Heinze@openBackhaul.com)
 - 2.0.0-tsp.d.t : Model for the Transport SDN Pilot at Telefonica Germany
 
 ### UML
-- Thorsten Heinze (Thorsten.Heinze@openBackhaul.com)
 - [TdmContainer_2.0.0-tsp.191123.1240](./TdmContainer_2.0.0-tsp.191123.1240.zip)
 
 ### Overview 
-- Thorsten Heinze (Thorsten.Heinze@openBackhaul.com)
 - [TdmContainer_2.0.0-tsp.191123.1240+overview.1](./TdmContainer_2.0.0-tsp.191123.1240+overview.1.png)
 
-### List of Classes
-- Waseem Sattar (Waseem.Sattar@openBackhaul.com)
-- to be provided
-
 ### GenDoc Export
-- Thorsten Heinze (Thorsten.Heinze@openBackhaul.com)
 - [TdmContainer_2.0.0-tsp.191123.1240+gendoc.1](./TdmContainer_2.0.0-tsp.191123.1240+gendoc.1.docx)
 
 ### Augmentation Condition
 - When statement in Augmentation statement demands for LayerProtocol::layerProtocolName==LAYER_PROTOCOL_NAME_TYPE_TDM_CONTAINER_LAYER
 
 ### YANG File
-- Martin Skorupski (Martin.Skorupski@openBackhaul.com)
 - [TdmContainer_2.0.0-tsp.200123.1050+yang.3](./TdmContainer_2.0.0-tsp.200123.1050+yang.3.zip)
+
+### JSON Schema
+- to be provided
 
 ### Interface Simulator
 - to be provided
@@ -35,13 +30,12 @@ This model is a technology specific amendment to the LayerProtocol class of the 
 - to be provided
 
 ### Publication
-- not planned
+- Candidate for ONF TR-532 v2.0
 
 ### Aspired Model Classification
-- Trial
+- Live Network
 
 ### Open Issue List
-- Thorsten Heinze (Thorsten.Heinze@openBackhaul.com)
 - [tdmContainer/issues](../../issues)
 
 ### Comments
