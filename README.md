@@ -25,6 +25,7 @@
 
 ### YANG File
 - [TdmContainer_2.0.0-tsp.200123.1050+yang.3](./TdmContainer_2.0.0-tsp.200123.1050+yang.3.zip) (deprecated)
+- [TdmContainer_2.0.0-tsp.220324.1125+yang.1](./TdmContainer_2.0.0-tsp.220324.1125+yang.1.zip)
 
 ### JSON Schema
 - to be provided
