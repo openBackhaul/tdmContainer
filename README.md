@@ -9,7 +9,7 @@ This model is a technology specific amendment to the LayerProtocol class of the 
 - TR-532 v1.1 officially published by ONF in April 2019
 - published
 
-### [2.0.0-tsp.d.t](../../tree/tsp)
+### [2.0.0-tsi.d.t](../../tree/tsi)
 - Disaggregated component of TR-532
 - under definition
 
