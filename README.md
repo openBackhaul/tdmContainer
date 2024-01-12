@@ -9,7 +9,11 @@ This model is a technology specific amendment to the LayerProtocol class of the 
 - TR-532 v1.1 officially published by ONF in April 2019
 - published
 
-### [2.0.0-tsi.d.t](../../tree/tsi)
+### [2.0.0](../../tree/TR532v2_0)
+- TR-532 v2.0 officially published by ONF in January 2024
+- published
+
+### [2.1.0-tsi.d.t](../../tree/tsi)
 - Disaggregated component of TR-532
 - under definition
 
