@@ -26,7 +26,7 @@
 - to be provided
 
 ### Interface Validator
-- to be provided
+- [TdmContainer_2.0.0-tsi.240104.1855+validator.1](./TdmContainer_2.0.0-tsi.240104.1855+validator.1.zip)
 
 ### Publication
 - Candidate for ONF TR-532 v2.0
