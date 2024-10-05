@@ -1,0 +1,449 @@
+openapi: 3.0.1
+info:
+  title: TdmContainer_2.0.0-tsi.240104.1855+simulator.1
+  version: 2.0.0
+
+paths:
+
+########################################################################################################################
+#   Generic Paths
+########################################################################################################################
+  /core-model-1-4:network-control-domain=cache/control-construct={mountName}/logical-termination-point={uuid}/layer-protocol={localId}/tdm-container-2-0:tdm-container-pac/tdm-container-capability:
+    parameters:
+      - $ref: '#/components/parameters/user'
+      - $ref: '#/components/parameters/originator'
+      - $ref: '#/components/parameters/x-correlator'
+      - $ref: '#/components/parameters/trace-indicator'
+      - $ref: '#/components/parameters/customer-journey'
+      - $ref: '#/components/parameters/mountName'
+      - $ref: '#/components/parameters/uuid'
+      - $ref: '#/components/parameters/localId'
+      - $ref: '#/components/parameters/fields'
+    get:
+      operationId: getCachedTdmContainerCapability
+      summary: 'Provides TdmContainerCapability from cache'
+      tags:
+        - IndividualServices
+      security:
+        - apiKeyAuth: []
+      responses:
+        '200':
+          description: 'TdmContainerCapability provided from cache'
+          content:
+            application/json:
+              schema:
+                type: object
+                required:
+                  - tdm-container-2-0:tdm-container-capability
+                properties:
+                  tdm-container-2-0:tdm-container-capability:
+                    $ref: '#/components/schemas/tdm-container-capability'
+                example:
+                  tdm-container-2-0:tdm-container-capability:
+                    supported-tdm-container-kind-list:
+                      - tdm-container-name: 'e1'
+                        tdm-container-size: 2048
+                      - tdm-container-name: 'e3'
+                        tdm-container-size: 44736
+                    admin-shut-down-is-avail: true
+                    supported-loop-back-kind-list:
+                      - 'tdm-container-2-0:LOOP_BACK_TYPE_BACK_TO_LOCAL'
+                      - 'tdm-container-2-0:LOOP_BACK_TYPE_BACK_TO_REMOTE'
+                      - 'tdm-container-2-0:LOOP_BACK_TYPE_NOT_YET_DEFINED'
+                    maintenance-timer-range: '1, 10, 60, 300, 500'
+          headers:
+            x-correlator:
+              $ref: '#/components/headers/x-correlator'
+            exec-time:
+              $ref: '#/components/headers/exec-time'
+            backend-time:
+              $ref: '#/components/headers/backend-time'
+            life-cycle-state:
+              $ref: '#/components/headers/life-cycle-state'
+        '4XX':
+          $ref: '#/components/responses/responseForErroredServiceRequests'
+        '500':
+          $ref: '#/components/responses/responseForErroredServiceRequests'
+        default:
+          $ref: '#/components/responses/responseForErroredServiceRequests'
+  /core-model-1-4:network-control-domain=cache/control-construct={mountName}/logical-termination-point={uuid}/layer-protocol={localId}/tdm-container-2-0:tdm-container-pac/tdm-container-configuration:
+    parameters:
+      - $ref: '#/components/parameters/user'
+      - $ref: '#/components/parameters/originator'
+      - $ref: '#/components/parameters/x-correlator'
+      - $ref: '#/components/parameters/trace-indicator'
+      - $ref: '#/components/parameters/customer-journey'
+      - $ref: '#/components/parameters/mountName'
+      - $ref: '#/components/parameters/uuid'
+      - $ref: '#/components/parameters/localId'
+      - $ref: '#/components/parameters/fields'
+    get:
+      operationId: getCachedTdmContainerConfiguration
+      summary: 'Provides TdmContainerConfiguration from cache'
+      tags:
+        - IndividualServices
+      security:
+        - apiKeyAuth: []
+      responses:
+        '200':
+          description: 'TdmContainerConfiguration provided from cache'
+          content:
+            application/json:
+              schema:
+                type: object
+                required:
+                  - tdm-container-2-0:tdm-container-configuration
+                properties:
+                  tdm-container-2-0:tdm-container-configuration:
+                    $ref: '#/components/schemas/tdm-container-configuration'
+                example:
+                  tdm-container-2-0:tdm-container-configuration:
+                    interface-name: 'string'
+                    interface-is-on: true
+                    tdm-container-kind: 'string'
+                    segment-number: 0
+                    loop-back-kind-on: 'tdm-container-2-0:LOOP_BACK_TYPE_NONE'
+                    maintenance-timer: 0
+          headers:
+            x-correlator:
+              $ref: '#/components/headers/x-correlator'
+            exec-time:
+              $ref: '#/components/headers/exec-time'
+            backend-time:
+              $ref: '#/components/headers/backend-time'
+            life-cycle-state:
+              $ref: '#/components/headers/life-cycle-state'
+        '4XX':
+          $ref: '#/components/responses/responseForErroredServiceRequests'
+        '500':
+          $ref: '#/components/responses/responseForErroredServiceRequests'
+        default:
+          $ref: '#/components/responses/responseForErroredServiceRequests'
+  /core-model-1-4:network-control-domain=cache/control-construct={mountName}/logical-termination-point={uuid}/layer-protocol={localId}/tdm-container-2-0:tdm-container-pac/tdm-container-status:
+    parameters:
+      - $ref: '#/components/parameters/user'
+      - $ref: '#/components/parameters/originator'
+      - $ref: '#/components/parameters/x-correlator'
+      - $ref: '#/components/parameters/trace-indicator'
+      - $ref: '#/components/parameters/customer-journey'
+      - $ref: '#/components/parameters/mountName'
+      - $ref: '#/components/parameters/uuid'
+      - $ref: '#/components/parameters/localId'
+      - $ref: '#/components/parameters/fields'
+    get:
+      operationId: getCachedTdmContainerStatus
+      summary: 'Provides TdmContainerStatus from cache'
+      tags:
+        - IndividualServices
+      security:
+        - apiKeyAuth: []
+      responses:
+        '200':
+          description: 'TdmContainerStatus provided from cache'
+          content:
+            application/json:
+              schema:
+                type: object
+                required:
+                  - tdm-container-2-0:tdm-container-status
+                properties:
+                  tdm-container-2-0:tdm-container-status:
+                    $ref: '#/components/schemas/tdm-container-status'
+                example:
+                  tdm-container-2-0:tdm-container-status:
+                    interface-status: 'tdm-container-2-0:INTERFACE_STATUS_TYPE_UP'
+                    loop-back-kind-up: 'tdm-container-2-0:LOOP_BACK_TYPE_NONE'
+          headers:
+            x-correlator:
+              $ref: '#/components/headers/x-correlator'
+            exec-time:
+              $ref: '#/components/headers/exec-time'
+            backend-time:
+              $ref: '#/components/headers/backend-time'
+            life-cycle-state:
+              $ref: '#/components/headers/life-cycle-state'
+        '4XX':
+          $ref: '#/components/responses/responseForErroredServiceRequests'
+        '500':
+          $ref: '#/components/responses/responseForErroredServiceRequests'
+        default:
+          $ref: '#/components/responses/responseForErroredServiceRequests'
+
+
+########################################################################################################################
+#   Common Components
+########################################################################################################################
+components:
+  parameters:
+    user:
+      name: user
+      in: header
+      required: true
+      schema:
+        type: string
+        example: 'User Name'
+      description: 'User identifier from the system starting the service call'
+    originator:
+      name: originator
+      in: header
+      required: true
+      schema:
+        type: string
+        minLength: 3
+        example: 'Resolver'
+      description: >
+        'Identification for the system consuming the API, as defined in
+         [/core-model-1-4:control-construct/logical-termination-point={uuid}/layer-protocol=0/http-client-interface-1-0:http-client-interface-pac/http-client-interface-configuration/application-name]'
+    x-correlator:
+      name: x-correlator
+      in: header
+      required: true
+      schema:
+        type: string
+        pattern: '^[0-9A-Fa-f]{8}(?:-[0-9A-Fa-f]{4}){3}-[0-9A-Fa-f]{12}$'
+        description: 'Empty string accepted from external applications.'
+        example: '550e8400-e29b-11d4-a716-446655440000'
+      description: 'UUID for the service execution flow that allows to correlate requests and responses'
+    trace-indicator:
+      name: trace-indicator
+      in: header
+      required: true
+      schema:
+        type: string
+        pattern: '^([0-9]+)(\.([0-9]+))*$'
+        description: 'Empty string accepted from external applications.'
+        example: '1.3.1'
+      description: 'Sequence of request numbers along the flow'
+    customer-journey:
+      name: customer-journey
+      in: header
+      required: true
+      schema:
+        type: string
+        example: 'Unknown value'
+      description: 'Holds information supporting customer’s journey to which the execution applies'
+    mountName:
+      name: mountName
+      in: path
+      required: true
+      schema:
+        type: string
+        example: '222250001'
+      description: 'The mountName of the device that is addressed by the request'
+    uuid:
+      name: uuid
+      in: path
+      required: true
+      schema:
+        type: string
+        example: 'LTP-MWPS-TTP-1-1'
+      description: 'Instance identifier that is unique within the device'
+    uuid1:
+      name: uuid1
+      in: path
+      required: true
+      schema:
+        type: string
+        example: 'LTP-MWPS-TTP-1-1'
+      description: 'Another instance identifier that is unique within the device'
+    localId:
+      name: localId
+      in: path
+      required: true
+      schema:
+        type: string
+        example: 'LP-MWPS-TTP-1-1'
+      description: 'Instance identifier that is unique within its list'
+    fields:
+      name: fields
+      in: query
+      required: false
+      schema:
+        type: string
+        example: 'node(node-id;netconf-node-topology:connection-status)'
+      description: 'Query parameter to filter ressources according to RFC8040 fields filter spec'
+  responses:
+    responseForErroredServiceRequests:
+      description: 'Response in case of errored service requests'
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/errorDescription'
+      headers:
+        x-correlator:
+          schema:
+            type: string
+            pattern: '^[0-9A-Fa-f]{8}(?:-[0-9A-Fa-f]{4}){3}-[0-9A-Fa-f]{12}$'
+            example: '550e8400-e29b-11d4-a716-446655440000'
+          description: 'UUID for the service execution flow that allows to correlate requests and responses. Its value must be identical at the response compared with its corresponding request'
+        exec-time:
+          schema:
+            type: integer
+            example: 1100
+          description: 'Value written by the service provider, reporting the total elapsed time for the execution, including all the additional processing needed to retrieve the data from the backend service. Expressed in milliseconds'
+        backend-time:
+          schema:
+            type: integer
+            example: 850
+          description: 'Value written by the service provider, reporting the elapsed time for data retrieval from the backend (service invocation, database access…). Expressed in milliseconds'
+    responseForErroredOamRequests:
+      description: 'Response in case of errored OaM requests'
+      content:
+        application/json:
+          schema:
+            $ref: '#/components/schemas/errorDescription'
+  headers:
+    x-correlator:
+      schema:
+        type: string
+        example: '550e8400-e29b-11d4-a716-446655440000'
+      description: 'UUID for the service execution flow that allows to correlate requests and responses. Its value must be identical at the response compared with its corresponding request'
+    exec-time:
+      schema:
+        type: integer
+        example: 1100
+      description: 'Value written by the service provider, reporting the total elapsed time for the execution, including all the additional processing needed to retrieve the data from the backend service. Expressed in milliseconds'
+    backend-time:
+      schema:
+        type: integer
+        example: 850
+      description: 'Value written by the service provider, reporting the elapsed time for data retrieval from the backend (service invocation, database access…). Expressed in milliseconds'
+    life-cycle-state:
+      schema:
+        type: string
+        enum:
+          - 'EXPERIMENTAL'
+          - 'OPERATIONAL'
+          - 'DEPRECATED'
+          - 'OBSOLETE'
+          - 'UNKNOWN'
+          - 'NOT_YET_DEFINED'
+        example: 'EXPERIMENTAL'
+  schemas:
+    errorDescription:
+      type: object
+      required:
+        - code
+        - message
+      properties:
+        code:
+          type: integer
+          format: int32
+        message:
+          type: string
+
+    tdm-container-capability:
+      type: object
+      required:
+        - supported-tdm-container-kind-list
+        - admin-shut-down-is-avail
+        - supported-loop-back-kind-list
+        - maintenance-timer-range
+      properties:
+        supported-tdm-container-kind-list:
+          type: array
+          minItems: 1
+          x-key: tdm-container-name
+          items:
+            type: object
+            required:
+              - tdm-container-name
+              - tdm-container-size
+            properties:
+              tdm-container-name:
+                type: string
+                enum:
+                  - 'e1'
+                  - 't1'
+                  - 'j1'
+                  - 'e3'
+                  - 't3'
+                  - 'stm1'
+                  - 'cpri1'
+                  - 'cpri2'
+                  - 'cpri3'
+                  - 'cpri4'
+                  - 'cpri5'
+                  - 'cpri6'
+                  - 'cpri7'
+              tdm-container-size:
+                type: integer
+                format: int32
+        admin-shut-down-is-avail:
+          type: boolean
+        supported-loop-back-kind-list:
+          type: array
+          minItems: 1
+          maxItems: 3
+          items:
+            type: string
+            enum:
+              - 'tdm-container-2-0:LOOP_BACK_TYPE_NONE'
+              - 'tdm-container-2-0:LOOP_BACK_TYPE_BACK_TO_LOCAL'
+              - 'tdm-container-2-0:LOOP_BACK_TYPE_BACK_TO_REMOTE'
+              - 'tdm-container-2-0:LOOP_BACK_TYPE_NOT_YET_DEFINED'
+        maintenance-timer-range:
+          type: string
+          pattern: '^(Range of the maintenance timer not yet defined\.)$|^([0-9]{1,}){1,1}([,]{1,1}[ ]{1,1}[1-9]{1,1}[0-9]{0,}){0,}$|^([0-9]{1,}){1,1}(-){1,1}([1-9]{1,1}[0-9]{0,}){1,1}$'
+    tdm-container-configuration:
+      type: object
+      required:
+        - interface-name
+        - interface-is-on
+        - tdm-container-kind
+        - segment-number
+        - loop-back-kind-on
+        - maintenance-timer
+      properties:
+        interface-name:
+          type: string
+        interface-is-on:
+          type: boolean
+        tdm-container-kind:
+          type: string
+          description: Type of TDM container.
+        segment-number:
+          type: integer
+          format: int16
+        loop-back-kind-on:
+          type: string
+          enum:
+            - 'tdm-container-2-0:LOOP_BACK_TYPE_NONE'
+            - 'tdm-container-2-0:LOOP_BACK_TYPE_BACK_TO_LOCAL'
+            - 'tdm-container-2-0:LOOP_BACK_TYPE_BACK_TO_REMOTE'
+            - 'tdm-container-2-0:LOOP_BACK_TYPE_NOT_YET_DEFINED'
+        maintenance-timer:
+          type: integer
+          format: int32
+    tdm-container-status:
+      type: object
+      required:
+        - interface-status
+        - loop-back-kind-up
+      properties:
+        interface-status:
+          type: string
+          enum:
+            - 'tdm-container-2-0:INTERFACE_STATUS_TYPE_UP'
+            - 'tdm-container-2-0:INTERFACE_STATUS_TYPE_DOWN'
+            - 'tdm-container-2-0:INTERFACE_STATUS_TYPE_TESTING'
+            - 'tdm-container-2-0:INTERFACE_STATUS_TYPE_UNKNOWN'
+            - 'tdm-container-2-0:INTERFACE_STATUS_TYPE_DORMANT'
+            - 'tdm-container-2-0:INTERFACE_STATUS_TYPE_NOT_PRESENT'
+            - 'tdm-container-2-0:INTERFACE_STATUS_TYPE_NOT_YET_DEFINED'
+        loop-back-kind-up:
+          type: string
+          enum:
+            - 'tdm-container-2-0:LOOP_BACK_TYPE_NONE'
+            - 'tdm-container-2-0:LOOP_BACK_TYPE_BACK_TO_LOCAL'
+            - 'tdm-container-2-0:LOOP_BACK_TYPE_BACK_TO_REMOTE'
+            - 'tdm-container-2-0:LOOP_BACK_TYPE_NOT_YET_DEFINED'
+
+  securitySchemes:
+    apiKeyAuth:
+      type: apiKey
+      in: header
+      name: operation-key
+    basicAuth:
+      type: http
+      scheme: basic

@@ -1,0 +1,164 @@
+{
+    "/tdm-container-2-0:tdm-container-capability": {
+        "type": "object",
+        "required": [
+            "tdm-container-2-0:tdm-container-capability"
+        ],
+        "properties": {
+            "tdm-container-2-0:tdm-container-capability": {
+                "type": "object",
+                "required": [
+                    "supported-tdm-container-kind-list",
+                    "admin-shut-down-is-avail",
+                    "supported-loop-back-kind-list",
+                    "maintenance-timer-range"
+                ],
+                "properties": {
+                    "supported-tdm-container-kind-list": {
+                        "type": "array",
+                        "minItems": 1,
+                        "x-key": "tdm-container-name",
+                        "items": {
+                            "type": "object",
+                            "required": [
+                                "tdm-container-name",
+                                "tdm-container-size"
+                            ],
+                            "properties": {
+                                "tdm-container-name": {
+                                    "type": "string",
+                                    "enum": [
+                                        "e1",
+                                        "t1",
+                                        "j1",
+                                        "e3",
+                                        "t3",
+                                        "stm1",
+                                        "cpri1",
+                                        "cpri2",
+                                        "cpri3",
+                                        "cpri4",
+                                        "cpri5",
+                                        "cpri6",
+                                        "cpri7"
+                                    ]
+                                },
+                                "tdm-container-size": {
+                                    "type": "integer",
+                                    "format": "int32"
+                                }
+                            }
+                        }
+                    },
+                    "admin-shut-down-is-avail": {
+                        "type": "boolean"
+                    },
+                    "supported-loop-back-kind-list": {
+                        "type": "array",
+                        "minItems": 1,
+                        "maxItems": 3,
+                        "items": {
+                            "type": "string",
+                            "enum": [
+                                "tdm-container-2-0:LOOP_BACK_TYPE_NONE",
+                                "tdm-container-2-0:LOOP_BACK_TYPE_BACK_TO_LOCAL",
+                                "tdm-container-2-0:LOOP_BACK_TYPE_BACK_TO_REMOTE",
+                                "tdm-container-2-0:LOOP_BACK_TYPE_NOT_YET_DEFINED"
+                            ]
+                        }
+                    },
+                    "maintenance-timer-range": {
+                        "type": "string",
+                        "pattern": "^(Range of the maintenance timer not yet defined\\.)$|^([0-9]{1,}){1,1}([,]{1,1}[ ]{1,1}[1-9]{1,1}[0-9]{0,}){0,}$|^([0-9]{1,}){1,1}(-){1,1}([1-9]{1,1}[0-9]{0,}){1,1}$"
+                    }
+                }
+            }
+        }
+    },
+    "/tdm-container-2-0:tdm-container-pac/tdm-container-configuration": {
+        "type": "object",
+        "required": [
+            "tdm-container-2-0:tdm-container-configuration"
+        ],
+        "properties": {
+            "tdm-container-2-0:tdm-container-configuration": {
+                "type": "object",
+                "required": [
+                    "interface-name",
+                    "interface-is-on",
+                    "tdm-container-kind",
+                    "segment-number",
+                    "loop-back-kind-on",
+                    "maintenance-timer"
+                ],
+                "properties": {
+                    "interface-name": {
+                        "type": "string"
+                    },
+                    "interface-is-on": {
+                        "type": "boolean"
+                    },
+                    "tdm-container-kind": {
+                        "type": "string",
+                        "description": "Type of TDM container."
+                    },
+                    "segment-number": {
+                        "type": "integer",
+                        "format": "int16"
+                    },
+                    "loop-back-kind-on": {
+                        "type": "string",
+                        "enum": [
+                            "tdm-container-2-0:LOOP_BACK_TYPE_NONE",
+                            "tdm-container-2-0:LOOP_BACK_TYPE_BACK_TO_LOCAL",
+                            "tdm-container-2-0:LOOP_BACK_TYPE_BACK_TO_REMOTE",
+                            "tdm-container-2-0:LOOP_BACK_TYPE_NOT_YET_DEFINED"
+                        ]
+                    },
+                    "maintenance-timer": {
+                        "type": "integer",
+                        "format": "int32"
+                    }
+                }
+            }
+        }
+    },
+    "/tdm-container-2-0:tdm-container-status": {
+        "type": "object",
+        "required": [
+            "tdm-container-2-0:tdm-container-status"
+        ],
+        "properties": {
+            "tdm-container-2-0:tdm-container-status": {
+                "type": "object",
+                "required": [
+                    "interface-status",
+                    "loop-back-kind-up"
+                ],
+                "properties": {
+                    "interface-status": {
+                        "type": "string",
+                        "enum": [
+                            "tdm-container-2-0:INTERFACE_STATUS_TYPE_UP",
+                            "tdm-container-2-0:INTERFACE_STATUS_TYPE_DOWN",
+                            "tdm-container-2-0:INTERFACE_STATUS_TYPE_TESTING",
+                            "tdm-container-2-0:INTERFACE_STATUS_TYPE_UNKNOWN",
+                            "tdm-container-2-0:INTERFACE_STATUS_TYPE_DORMANT",
+                            "tdm-container-2-0:INTERFACE_STATUS_TYPE_NOT_PRESENT",
+                            "tdm-container-2-0:INTERFACE_STATUS_TYPE_NOT_YET_DEFINED"
+                        ]
+                    },
+                    "loop-back-kind-up": {
+                        "type": "string",
+                        "enum": [
+                            "tdm-container-2-0:LOOP_BACK_TYPE_NONE",
+                            "tdm-container-2-0:LOOP_BACK_TYPE_BACK_TO_LOCAL",
+                            "tdm-container-2-0:LOOP_BACK_TYPE_BACK_TO_REMOTE",
+                            "tdm-container-2-0:LOOP_BACK_TYPE_NOT_YET_DEFINED"
+                        ]
+                    }
+                }
+            }
+        }
+    }
+}

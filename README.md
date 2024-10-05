@@ -17,22 +17,22 @@
 - When statement in Augmentation statement demands for LayerProtocol::layerProtocolName==LAYER_PROTOCOL_NAME_TYPE_TDM_CONTAINER_LAYER
 
 ### YANG File
-- [TdmContainer_2.0.0-tsi.240104.1855+yang.1](./TdmContainer_2.0.0-tsi.240104.1855+yang.1.zip)
+- [TdmContainer_2.0.0-tsi.240104.1855+yang.1](./TdmContainer_2.0.0-tsi.240104.1855+yang/tdm-container-2-0.yang)
 
-### JSON Schema
-- to be provided
+### Schema
+- [TdmContainer_2.0.0-tsi.240104.1855+schema](./TdmContainer_2.0.0-tsi.240104.1855+schema/)
 
 ### Interface Simulator
-- to be provided
+- [TdmContainer_2.0.0-tsi.240104.1855+simulator](./TdmContainer_2.0.0-tsi.240104.1855+simu/)
 
 ### Interface Validator
-- [TdmContainer_2.0.0-tsi.240104.1855+validator.1](./TdmContainer_2.0.0-tsi.240104.1855+validator.1.zip)
+- [TdmContainer_2.0.0-tsi.240104.1855+validator](./TdmContainer_2.0.0-tsi.240104.1855+vali/)
 
 ### Publication
-- Candidate for ONF TR-532 v2.0
+- Published as a part of ONF TR-532 v2.0  
 
-### Aspired Model Classification
-- Live Network
+### Model Classification
+- Operational in Live Network
 
 ### Open Issue List
 - [tdmContainer/issues](../../issues)
