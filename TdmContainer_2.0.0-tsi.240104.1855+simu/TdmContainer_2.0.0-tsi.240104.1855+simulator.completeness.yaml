@@ -91,7 +91,7 @@ paths:
               $ref: '#/components/headers/life-cycle-state'
   
 # Completeness of GET 200
-  /core-model-1-4:network-control-domain=cache/control-construct={mountName}/logical-termination-point={uuid}/layer-protocol={localId}/tdm-container-2-0:tdm-container-pac/tdm-container-capability:
+  /core-model-1-4:network-control-domain=cache/control-construct=305250001/logical-termination-point=tdmCont1/layer-protocol=1/tdm-container-2-0:tdm-container-pac/tdm-container-capability:
     parameters:
       - $ref: '#/components/parameters/user'
       - $ref: '#/components/parameters/originator'
@@ -149,7 +149,7 @@ paths:
           $ref: '#/components/responses/responseForErroredServiceRequests'
         default:
           $ref: '#/components/responses/responseForErroredServiceRequests'
-  /core-model-1-4:network-control-domain=cache/control-construct={mountName}/logical-termination-point={uuid}/layer-protocol={localId}/tdm-container-2-0:tdm-container-pac/tdm-container-configuration:
+  /core-model-1-4:network-control-domain=cache/control-construct=305250001/logical-termination-point=tdmCont1/layer-protocol=1/tdm-container-2-0:tdm-container-pac/tdm-container-configuration:
     parameters:
       - $ref: '#/components/parameters/user'
       - $ref: '#/components/parameters/originator'
@@ -202,7 +202,7 @@ paths:
           $ref: '#/components/responses/responseForErroredServiceRequests'
         default:
           $ref: '#/components/responses/responseForErroredServiceRequests'
-  /core-model-1-4:network-control-domain=cache/control-construct={mountName}/logical-termination-point={uuid}/layer-protocol={localId}/tdm-container-2-0:tdm-container-pac/tdm-container-status:
+  /core-model-1-4:network-control-domain=cache/control-construct=305250001/logical-termination-point=tdmCont1/layer-protocol=1/tdm-container-2-0:tdm-container-pac/tdm-container-status:
     parameters:
       - $ref: '#/components/parameters/user'
       - $ref: '#/components/parameters/originator'
