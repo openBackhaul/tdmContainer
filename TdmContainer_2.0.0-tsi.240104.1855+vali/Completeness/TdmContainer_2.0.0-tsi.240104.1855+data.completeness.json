@@ -48,8 +48,7 @@
 				"collectionName": "TdmContainer_simulator",
 				"serverToBeApplied": "controller in TdmContainer_2.0.0-tsi.240104.1855+simulator.completeness",
 				"mountName": "305250001",
-				"kindOfReference": "static",
-				"suffixUrlEncodingIsRequired": true
+				"kindOfReference": "static"
 			}
 		]
 	}
